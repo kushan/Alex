@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+	<!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>AlexSample</title>
+	
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="css/style.css" type="text/css" />
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+	<!-- If you application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery-1.5.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/iscroll.js"></script>
+	<!--script type="text/javascript" charset="utf-8" src="js/webkitdragdrop.js"></script-->
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+
+	// If you want to prevent dragging, uncomment this section
+	
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	
+	
+	function onBodyLoad()
+	{
+		document.addEventListener("deviceready",onDeviceReady,false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	function onDeviceReady()
+	{
+		// do your thing!
+		
+	}
+    
+    </script>
+	
+  </head>
+  <body onload="onBodyLoad()">
+  <div id="mainContainer">
+<div id="wrapperLeft">
+	<div class="scroller">
+		<ul class="thelist">
+			<li><img src="images/icons/01.png" alt="AM" class="icon" /></li>
+			<li><img src="images/icons/02.png" alt="AM" class="icon" /></li>
+			<li><img src="images/icons/03.png" alt="AM" class="icon" /></li>
+			<li><img src="images/icons/04.png" alt="Band" class="icon" /></li>
+			<li><img src="images/icons/05.png" alt="BootNeuter" class="icon" /></li>
+			<li><img src="images/icons/06.png" alt="Calendar" class="icon"/></li>
+			<li><img src="images/icons/07.png" alt="Camera" class="icon"/></li>
+			<li><img src="images/icons/08.png" alt="Chess" class="icon" /></li>
+			<li><img src="images/icons/09.png" alt="Clock" class="icon"/></li>
+			<li><img src="images/icons/10.png" alt="FInder" class="icon"/></li>
+			<li><img src="images/icons/11.png" alt="Installer" class="icon"/></li>		
+		</ul>
+		
+	</div>
+</div>
+
+<div id="wrapperCenter">
+	<div class="scroller">
+		<ul style="padding-left:70px;">
+			<li><div class="cBlock" id="c1">&nbsp;</div></li>
+			<li><div class="cBlock" id="c2">&nbsp;</div></li>
+			<li><div class="cBlock" id="c3">&nbsp;</div></li>
+			<li><div class="cBlock" id="c4">&nbsp;</div></li>
+			<li><div class="cBlock" id="c5">&nbsp;</div></li>
+			<li><div class="cBlock" id="c6">&nbsp;</div></li>
+			<li><div class="cBlock" id="c7">&nbsp;</div></li>
+			<li><div class="cBlock" id="c8">&nbsp;</div></li>
+			<li><div class="cBlock" id="c9">&nbsp;</div></li>
+			<li><div class="cBlock" id="c10">&nbsp;</div></li>
+		</ul>
+	</div>
+</div>
+
+<div id="wrapperRight">
+	<div class="scroller">
+		<ul class="thelistR">
+			<li><img src="images/icons/12.png" alt="AM" class="iconR" /></li>
+			<li><img src="images/icons/11.png" alt="AM" class="iconR" /></li>
+			<li><img src="images/icons/10.png" alt="AM" class="iconR" /></li>
+			<li><img src="images/icons/09.png" alt="Band" class="iconR" /></li>
+			<li><img src="images/icons/08.png" alt="BootNeuter" class="iconR" /></li>
+			<li><img src="images/icons/07.png" alt="Calendar" class="iconR"/></li>
+			<li><img src="images/icons/06.png" alt="Camera" class="iconR"/></li>
+			<li><img src="images/icons/05.png" alt="Chess" class="iconR" /></li>
+			<li><img src="images/icons/04.png" alt="Chess" class="iconR" /></li>
+			<li><img src="images/icons/03.png" alt="Chess" class="iconR" /></li>
+			<li><img src="images/icons/02.png" alt="Clock" class="iconR"/></li>
+			<li><img src="images/icons/01.png" alt="FInder" class="iconR"/></li>
+			<li><img src="images/icons/00.png" alt="Installer" class="iconR"/></li>
+		</ul>
+		
+	</div>
+</div>
+</div> <!-- mainContainer -->
+
+  </body>
+</html>

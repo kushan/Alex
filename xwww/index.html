@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+	<!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>AlexSample</title>
+	
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="css/style.css" type="text/css" />
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+	<!-- If you application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery-1.5.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/iscroll.js"></script>
+	<!--script type="text/javascript" charset="utf-8" src="js/webkitdragdrop.js"></script-->
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+
+	// If you want to prevent dragging, uncomment this section
+	
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	
+	
+	function onBodyLoad()
+	{
+		document.addEventListener("deviceready",onDeviceReady,false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	function onDeviceReady()
+	{
+		// do your thing!
+		
+	}
+    
+    </script>
+	
+  </head>
+  <body onload="onBodyLoad()">
+  <div id="mainContainer">
+<div id="wrapperLeft">
+	<div class="scroller">
+		<ul id="thelist">
+			<li id="li1">
+				<div id='icon1' class="icon">
+					<img src="images/icons/AM.png" alt="AM" class='top1' />
+				</div>
+			</li>
+			<li id="li2" class='icon'>
+				<div id='icon2' style="position:absolute; top:75px; left:10px;">
+					<img src="images/icons/Band.png" alt="Band" class='top1' />
+				</div>
+			</li>
+			<li id="li3">
+				<div id='icon3' style="position:absolute; top:150px; left:10px;">
+					<img src="images/icons/BootNeuter.png" alt="BootNeuter" />
+				</div>
+			</li>
+			<li id="li4">
+				<div id='icon4' style="position:absolute; top:225px; left:10px;">
+					<img src="images/icons/Calendar.png" alt="Calendar" />
+				</div>
+			</li>
+			<li id="li5">
+				<div id='icon5' style="position:absolute; top:300px; left:10px;">
+					<img src="images/icons/Camera.png" alt="Camera" />
+				</div>
+			</li>
+			<li id="li6">
+				<div id='icon6' style="position:absolute; top:375px; left:10px;">
+					<img src="images/icons/Chess.png" alt="Chess" />
+				</div>
+			</li>
+			<li id="li7">
+				<div id='icon7' style="position:absolute; top:450px; left:10px;">
+					<img src="images/icons/Clock.png" alt="Clock" />
+				</div>
+			</li>
+			<li id="li8">
+				<div id='icon8' style="position:absolute; top:525px; left:10px;">
+					<img src="images/icons/Finder.png" alt="FInder" />
+				</div>
+			</li>
+			<li id="li9">
+				<div id='icon9' style="position:absolute; top:600px; left:10px;">
+					<img src="images/icons/Installer.png" alt="Installer" />
+				</div>
+			</li>
+			<li id="li10">
+				<div id='icon10' style="position:absolute; top:675px; left:10px;">
+					<img src="images/icons/Installer.png" alt="Installer" />
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="wrapperCenter">
+	<div class="scroller">
+		<ul style="padding-left:70px;">
+			<li><div class="cBlock" id="c1">&nbsp;</div></li>
+			<li><div class="cBlock" id="c2">&nbsp;</div></li>
+			<li><div class="cBlock" id="c3">&nbsp;</div></li>
+			<li><div class="cBlock" id="c4">&nbsp;</div></li>
+			<li><div class="cBlock" id="c5">&nbsp;</div></li>
+			<li><div class="cBlock" id="c6">&nbsp;</div></li>
+			<li><div class="cBlock" id="c7">&nbsp;</div></li>
+			<li><div class="cBlock" id="c8">&nbsp;</div></li>
+			<li><div class="cBlock" id="c9">&nbsp;</div></li>
+			<li><div class="cBlock" id="c10">&nbsp;</div></li>
+		</ul>
+	</div>
+</div>
+
+<div id="wrapperRight">
+	<div class="scroller">
+		<ul style="padding-left:400px;">
+			<li><img src="images/icons/AM.png" alt="AM" /></li>
+			<li><img src="images/icons/Band.png" alt="Band" /></li>
+			<li><img src="images/icons/BootNeuter.png" alt="BootNeuter" /></li>
+			<li><img src="images/icons/Calendar.png" alt="Calendar" /></li>
+			<li><img src="images/icons/Camera.png" alt="Camera" /></li>
+			<li><img src="images/icons/Chess.png" alt="Chess" /></li>
+			<li><img src="images/icons/Clock.png" alt="Clock" /></li>
+			<li><img src="images/icons/Finder.png" alt="FInder" /></li>
+			<li><img src="images/icons/Installer.png" alt="Installer" /></li>
+			<li><img src="images/icons/MPG.png" alt="MPG" /></li>
+		</ul>
+		
+	</div>
+</div>
+</div> <!-- mainContainer -->
+
+  </body>
+</html>
